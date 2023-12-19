@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package areadoterreno.questão1;
 
-/**
- *
- * @author Sandro3
- */
+import javax.swing.JOptionPane;
+
 public class AreaDoTerrenoQuestão1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+     String input1 = JOptionPane.showInputDialog("Insira a largura do terreno em metros:");
+        double largura = Double.parseDouble(input1);
+
+        String input2 = JOptionPane.showInputDialog("Insira o comprimento do terreno em metros:");
+        double comprimento = Double.parseDouble(input2);
+
+        double area = largura * comprimento;
+
+        JOptionPane.showMessageDialog(null, "A área do terreno é de " + area + " metros quadrados.");
     }
-    
 }
